@@ -8,35 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.scanzbar.MainActivity$PlaceholderFragment">
 
-    <EditText
-        android:id="@+id/url_et"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:background="@android:color/white"
-        android:textColor="@android:color/black" />
+        android:text="@string/setting" />
 
-    <TextView
-        android:id="@+id/editText1"
+    <WebView
+        android:id="@+id/webview_res"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/button1"
-        android:layout_below="@+id/url_et"
+        android:layout_below="@+id/setting_btn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/et"
-        android:editable="false"
-        android:padding="4dp"
-        android:scrollbars="vertical"
-        android:textColor="@android:color/black" />
+        android:layout_marginTop="8dp" />
+
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="30dp"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="8dp"
+        android:padding="30dp"
         android:text="@string/scan" />
 
 

@@ -32,6 +32,7 @@
         <activity
             android:name="com.example.scanzbar.CameraTestActivity"
             android:screenOrientation="portrait"></activity>
+        <activity android:name=".SettingsActivity" />
     </application>
 
 </manifest>
