@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,6 +15,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+
+import java.net.URL;
 
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -68,6 +71,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
     private void loadViewView(String code) {
+
         resultView.loadUrl(url + code);
     }
 
